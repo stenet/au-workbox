@@ -1,0 +1,8 @@
+<template>
+  <div>
+    I'm your Service-Worker-Element. <span if.bind="newServiceWorkerState">State of new Service-Worker: ${newServiceWorkerState}</span>
+  </div>
+  <div>
+    <button if.bind="updateAvailable" click.delegate="executeUpdate()">Update me</button>
+  </div>
+</template>
